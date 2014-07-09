@@ -35,7 +35,7 @@
             <div class="clearfix"></div>
 
             <div class="display-mobile">
-                <a href="/" title="Home" class="current-tab">
+                <a href="/" title="Home" class="other-tab">
                     <img src="/img/home-icon2.png"/>
                 </a>
                 <a href="/portfolio.html" title="Portfolio" class="other-tab">

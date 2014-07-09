@@ -23,7 +23,7 @@ pageName: 'home'
             
         </p>
         <p class='post-content keep-reading'>
-            <a href="<%= post.url %>">Keep Reading ...</a>
+            <a href="<%= post.url %>">Keep Reading...</a>
         </p>
     </div>
 <% end %>

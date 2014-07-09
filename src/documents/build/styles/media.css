@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 670px) {
   /* CLASSES */
   h2, h3 {
     text-align: center; }
@@ -19,8 +19,6 @@
   .new-post2 {
     display: table;
     margin: 0 auto; }
-  .post-content {
-    padding: 0 25px; }
   .site-nav {
     display: block; }
   .site-nav a {

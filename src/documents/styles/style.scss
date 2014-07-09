@@ -14,8 +14,8 @@ body {
 	margin: 0;
 }
 
-footer {
-	color: #aaa;
+footer, 
+.empty {
 	height: 30px;
 	letter-spacing: 1px;
 	margin-bottom: 30px;
@@ -24,6 +24,9 @@ footer {
 	text-align: center;
 }
 footer a {
+	color: #aaa;
+}
+footer a:hover {
 	color: #000;
 }
 h1,
@@ -54,8 +57,8 @@ strong {
 
 /* CLASSES */
 .keep-reading {
-    padding: 10px 0 0 0;
-    text-align: center;
+	font-size: .9em;
+    text-align: right;
 
 }
 .post-content.keep-reading a { 
@@ -101,9 +104,10 @@ strong {
 }
 .content-wrapper {
 	min-height: 100%;
-	padding-bottom: 30px;
+	padding-bottom: 6%;
 
     .post-title {
+    	padding-top: 12%;
         text-align: center;
     }
 }
@@ -112,6 +116,7 @@ strong {
 	font-size: 2em;
 	margin-left: 15px;
 	margin-top: 30px;
+	padding-top: 5%;
 	text-align: left;
 }
 .current-tab{
@@ -163,11 +168,17 @@ strong {
 	line-height: 1.6em;
 	margin: 0 auto;
 	max-width: 800px;
+	padding: 0 8%;
 }
 .post-content a,
 .about-text a,
 .about-text2 a{
-	text-decoration: underline;
+	color: #aaa;
+}
+.post-content a:hover,
+.about-text a:hover,
+.about-text2 a:hover{
+	color: #000;
 }
 .post-content li{
 	font-size: 20px;
@@ -192,6 +203,10 @@ strong {
 }
 .post-script {
 	font-size: .8em;
+}
+.post-title {
+	padding: 0 12%;
+	padding-top: 12%;
 }
 .profile-image {
 	display: block;
@@ -226,9 +241,16 @@ strong {
 	text-align: left;
 }
 .to-top-link {
-	font-weight: bold;
 	margin-right: 5%;
+	margin-top: 5%;
 	text-align: right;
+}
+.to-top-link:a {
+	color: #aaa;
+	font-weight: bold;
+}
+.to-top-link a:hover{
+	color: #000;
 }
 /* CLEARFIX */
 .clearfix {

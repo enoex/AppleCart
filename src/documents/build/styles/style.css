@@ -12,8 +12,7 @@ body {
   height: 100%;
   margin: 0; }
 
-footer {
-  color: #aaa;
+footer, .empty {
   height: 30px;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -22,6 +21,9 @@ footer {
   text-align: center; }
 
 footer a {
+  color: #aaa; }
+
+footer a:hover {
   color: #000; }
 
 h1, h2, h3 {
@@ -48,8 +50,8 @@ strong {
 
 /* CLASSES */
 .keep-reading {
-  padding: 10px 0 0 0;
-  text-align: center; }
+  font-size: 0.9em;
+  text-align: right; }
 
 .post-content.keep-reading a {
   color: #a0a0a0;
@@ -93,8 +95,9 @@ strong {
 
 .content-wrapper {
   min-height: 100%;
-  padding-bottom: 30px; }
+  padding-bottom: 6%; }
   .content-wrapper .post-title {
+    padding-top: 12%;
     text-align: center; }
 
 .current-page {
@@ -102,6 +105,7 @@ strong {
   font-size: 2em;
   margin-left: 15px;
   margin-top: 30px;
+  padding-top: 5%;
   text-align: left; }
 
 .current-tab {
@@ -150,10 +154,14 @@ strong {
 .post-content {
   line-height: 1.6em;
   margin: 0 auto;
-  max-width: 800px; }
+  max-width: 800px;
+  padding: 0 8%; }
 
 .post-content a, .about-text a, .about-text2 a {
-  text-decoration: underline; }
+  color: #aaa; }
+
+.post-content a:hover, .about-text a:hover, .about-text2 a:hover {
+  color: #000; }
 
 .post-content li {
   font-size: 20px;
@@ -178,6 +186,10 @@ strong {
 
 .post-script {
   font-size: 0.8em; }
+
+.post-title {
+  padding: 0 12%;
+  padding-top: 12%; }
 
 .profile-image {
   display: block;
@@ -211,9 +223,16 @@ strong {
   text-align: left; }
 
 .to-top-link {
-  font-weight: bold;
   margin-right: 5%;
+  margin-top: 5%;
   text-align: right; }
+
+.to-top-link:a {
+  color: #aaa;
+  font-weight: bold; }
+
+.to-top-link a:hover {
+  color: #000; }
 
 /* CLEARFIX */
 .clearfix {
@@ -241,7 +260,7 @@ form {
   background-color: #fafafa;
   color: #207cca; }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 670px) {
   /* CLASSES */
   h2, h3 {
     text-align: center; }
@@ -262,8 +281,6 @@ form {
   .new-post2 {
     display: table;
     margin: 0 auto; }
-  .post-content {
-    padding: 0 25px; }
   .site-nav {
     display: block; }
   .site-nav a {
