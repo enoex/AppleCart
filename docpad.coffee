@@ -1,5 +1,7 @@
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
+require('docpad-plugin-moment')
+
 docpadConfig = {
     
     regenerateDelay: 0
@@ -16,16 +18,15 @@ docpadConfig = {
 		site:
 			# The production url of our website
 			# If not set, will default to the calculated site URL (e.g. http://localhost:9778)
-			url: "http://website.com"
+			url: "http://theapplecartproject.com"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
+				'www.theapplecartproject.com'
 			]
 
 			# The default title of our website
-			title: "Your Website"
+			title: "The Applecart Project"
 
 			# The website description (for SEO)
 			description: """
@@ -56,7 +57,6 @@ docpadConfig = {
 				'/vendor/modernizr.js'
 				'/build/scripts/all.js'
 			]
-
 
 		# -----------------------------
 		# Helper Functions
@@ -146,6 +146,25 @@ docpadConfig = {
 					res.redirect(newUrl+req.url, 301)
 				else
 					next()
+
+    plugins:
+      moment:
+        formats: [
+          {raw: 'date', format: 'MMMM Do YYYY', formatted: 'humanDate'}
+          {raw: 'date', format: 'YYYY-MM-DD', formatted: 'computerDate'}
+        ]
+
+    # Environment
+    # Which environment we should load up
+    # If not set, we will default the `NODE_ENV` environment variable, if that isn't set, we will default to `development`
+    env: 'development' # default
+
+    # Environments
+    # Allows us to set custom configuration for specific environments
+    environments:  # default
+        local:  # default
+            # Always refresh from server
+            maxAge: false  # default
 }
 
 # Export our DocPad Configuration

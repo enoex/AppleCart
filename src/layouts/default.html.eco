@@ -25,12 +25,11 @@
 	<![endif]-->
     <div class='content-wrapper'>
         <!-- SITE BANNER -->
-        <div class="<%= @document.pageName %>-banner banner">
+        <div class="<%= @document.pageName || @document.layout %>-banner banner">
 
             <div class="site-nav">
                 <a href="/" class="current other-tab">Home</a>
                 <a href="/portfolio.html" class="other-tab">Portfolio</a>
-                <a href="/blog.html" class="other-tab">Blog</a>
                 <a href="/about.html" class="other-tab">About</a>
             </div>
             <div class="clearfix"></div>
@@ -41,9 +40,6 @@
                 </a>
                 <a href="/portfolio.html" title="Portfolio" class="other-tab">
                     <img src="/img/portfolio-icon.png"/>
-                </a>
-                <a href="/blog.html" title="Blog" class="other-tab">
-                    <img src="/img/blog-icon.png"/>
                 </a>
                 <a href="/about.html" title="About" class="other-tab">
                     <img src="/img/about-icon.png"/>

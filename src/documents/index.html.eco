@@ -1,0 +1,32 @@
+---
+layout: 'default'
+pageName: 'home'
+---
+
+
+<% for post in @getCollection('posts').sortArray(date: -1): %>
+	<div class="new-post">
+        <a href="<%= post.url %>">
+            <h2>
+                <%- post.title or post.name %>
+            </h2>
+        </a>
+
+        <h3>
+            <%- post.category %>
+        </h3>
+
+        <h3 class='date'><%= @moment(post.date).format('MMMM Do, YYYY') %></h3>
+
+        <p class='post-content'>
+            <%- post.description %>
+            
+        </p>
+        <p class='post-content keep-reading'>
+            <a href="<%= post.url %>">Keep Reading ...</a>
+        </p>
+    </div>
+<% end %>
+
+
+<div class="to-top-link"><a href="/">Back to Top</a></div>

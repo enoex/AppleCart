@@ -1,8 +1,13 @@
 ---
 layout: default
+pageName: 'content'
 ---
 
-<h2><a href="<%= @document.url %>"><%- @document.title or @document.name %></a></h2>
+<h1 class='post-title'>
+    <a href="<%= @document.url %>"><%- @document.title or @document.name %></a>
+</h1>
+<h3> <%- @document.category %> </h3>
+
 <div>
 	<%- @content %>
 </div>
