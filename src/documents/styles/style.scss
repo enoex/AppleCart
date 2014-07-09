@@ -1,0 +1,253 @@
+/* =========================================================================
+ *
+ * main.scss
+ *  Your site's main SASS style entry point file 
+ * 
+ * ========================================================================= */
+* {
+	letter-spacing: 1px;
+}
+
+body {
+	font-family: 'Crimson Text', serif;
+	height: 100%;
+	margin: 0;
+}
+
+footer {
+	color: #aaa;
+	height: 30px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	margin-top: 40px;
+	position: relative;
+	text-align: center;
+}
+footer a {
+	color: #000;
+}
+h1,
+h2,
+h3 {
+	font-family: 'Raleway', sans-serif;
+}
+h2 {
+	text-align: left;
+}
+h3 a{
+	color: #aaa;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+p {
+	font-size: 20px;
+}
+strong {
+	line-height: 0;
+}
+
+.page-about footer {
+    display: none;
+}
+
+/* CLASSES */
+.about-image {
+	border: 1px solid #ccc;
+	border-radius: 100%;
+	box-shadow: 1px 1px 4px #ccc;
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 350px;
+}
+.banner {
+	background-position: top left;
+	background-size: cover;
+	min-height: 8em;
+}
+.about-banner {
+	background-image: url("/img/about-rainbow.jpg");
+}
+.blog-banner {
+	background-image: url("/img/blog-rainbow.jpg");
+}
+.blog-image {
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 4px #ccc;
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	max-width: 500px;
+	width: 100%;
+}
+.blog-page {
+	color: #000;
+	font-size: 2em;
+	margin-left: 15px;
+/*	margin-top: 0; - add back in when Search Button is active */
+	text-align: left;
+}
+.content-wrapper {
+	min-height: 100%;
+	padding-bottom: 30px;
+}
+.current-page {
+	color: #000;
+	font-size: 2em;
+	margin-left: 15px;
+	margin-top: 30px;
+	text-align: left;
+}
+.current-tab{
+	opacity: 1;
+}
+.date {
+	font-size: 16px;
+}
+.display-mobile {
+	color: #FFF;
+	display: block;
+	margin-right: 15px;
+	padding-top: 10px;
+	text-align: right;
+}
+.display-mobile img {
+	height: 25px;
+	padding-right: 5px;
+	width: 25px;
+}
+.main-title, 
+.page-title {
+	text-shadow: 1px 2px 1px #000;
+	color: #FFF;
+	font-size: 1.5em;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-left: 25px;
+	text-align: left;
+}
+.home-banner {
+	background-image: url("/img/home-rainbow-web.jpg");
+	background-repeat: repeat-x;
+	background-position: center;
+	background-size: cover;
+	min-height: 8em;
+}
+.new-post,
+.new-post2 {
+	padding: 30px 25px;
+}
+.other-tab {
+	opacity: .75;
+}
+.portfolio-banner {
+	background-image: url("/img/portfolio-rainbow.jpg");
+}
+.post-content {
+	line-height: 1.6em;
+	margin: 0 auto;
+	max-width: 800px;
+}
+.post-content a,
+.about-text a,
+.about-text2 a{
+	text-decoration: underline;
+}
+.post-content li{
+	font-size: 20px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.post-desc {
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	max-width: 700px;
+	width: 100%;
+}
+.post-image {
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 4px #ccc;
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	max-width: 700px;
+	width: 100%;
+}
+.post-script {
+	font-size: .8em;
+}
+.profile-image {
+	display: block;
+	max-width: 250px;
+	margin: 30px auto 30px;
+}
+.round-image {
+	border-radius: 20px;
+	height: 300px;
+}
+.site-nav {
+	display:none;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.site-nav a {
+	color: #FFF;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin: 0 2px;
+	padding: 5px;
+	position: absolute;
+	text-shadow: 1px 1px 4px #000;
+}
+.tagline,
+.page-tagline {
+	color: #FFF;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding-left: 25px;
+	text-align: left;
+}
+.to-top-link {
+	font-weight: bold;
+	margin-right: 5%;
+	text-align: right;
+}
+/* CLEARFIX */
+.clearfix {
+	clear: both;
+}
+
+/* SEARCH BUTTON */
+form {
+	padding: 10px 10px;
+	text-align: right;
+}
+.search {
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+}
+.button {
+    position:relative;
+   	padding:6px 15px;
+    left:-8px;
+    border:2px solid #207cca;
+    background-color:#207cca;
+    color:#fafafa;
+}
+.button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
+
+
+// =========================================================================
+//
+// Media Queries
+//
+// =========================================================================
+@import "media";

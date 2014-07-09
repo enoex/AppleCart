@@ -1,6 +1,9 @@
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
+    
+    regenerateDelay: 0
+    watchOptions: catchupDelay: 0
 
 	# =================================
 	# Template Data
@@ -38,7 +41,7 @@ docpadConfig = {
 			styles: [
 				'/vendor/normalize.css'
 				'/vendor/h5bp.css'
-				'/styles/style.css'
+				'/build/styles/style.css'
 			]
 
 			# The website's scripts
@@ -51,7 +54,7 @@ docpadConfig = {
 
 				'/vendor/log.js'
 				'/vendor/modernizr.js'
-				'/scripts/script.js'
+				'/build/scripts/all.js'
 			]
 
 
