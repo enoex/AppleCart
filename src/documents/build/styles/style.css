@@ -32,6 +32,9 @@ h1, h2, h3 {
 h2 {
   text-align: left; }
 
+h3 {
+  padding-left: 8%; }
+
 h3 a {
   color: #aaa; }
 
@@ -72,10 +75,10 @@ strong {
   min-height: 8em; }
 
 .about-banner {
-  background-image: url("/img/about-rainbow.jpg"); }
+  background-image: url("/img/about-posterize.jpg"); }
 
 .blog-banner, .content-banner {
-  background-image: url("/img/blog-rainbow.jpg"); }
+  background-image: url("/img/blog-posterize.jpg"); }
 
 .blog-image {
   border: 1px solid #ccc;
@@ -97,7 +100,7 @@ strong {
   min-height: 100%;
   padding-bottom: 6%; }
   .content-wrapper .post-title {
-    padding-top: 12%;
+    padding-top: 6%;
     text-align: center; }
 
 .current-page {
@@ -127,7 +130,7 @@ strong {
   width: 25px; }
 
 .main-title, .page-title {
-  text-shadow: 1px 2px 1px #000;
+  text-shadow: 1px 2px 1px #555;
   color: #FFF;
   font-size: 1.5em;
   margin-bottom: 0;
@@ -136,11 +139,14 @@ strong {
   text-align: left; }
 
 .home-banner {
-  background-image: url("/img/home-rainbow-web.jpg");
+  background-image: url("/img/home-posterize2.jpg");
   background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
   min-height: 8em; }
+
+.med {
+  max-width: 425px; }
 
 .new-post, .new-post2 {
   padding: 30px 25px; }
@@ -149,7 +155,7 @@ strong {
   opacity: 0.75; }
 
 .portfolio-banner {
-  background-image: url("/img/portfolio-rainbow.jpg"); }
+  background-image: url("/img/portfolio-posterize.jpg"); }
 
 .post-content {
   line-height: 1.6em;
@@ -215,23 +221,27 @@ strong {
   position: absolute;
   text-shadow: 1px 1px 4px #000; }
 
+.sm {
+  max-width: 280px; }
+
 .tagline, .page-tagline {
   color: #FFF;
   font-size: 20px;
   letter-spacing: 1px;
   padding-left: 25px;
-  text-align: left; }
+  text-align: left;
+  text-shadow: 1px 1px 1px #555; }
 
 .to-top-link {
   margin-right: 5%;
   margin-top: 5%;
   text-align: right; }
 
-.to-top-link:a {
+.top {
   color: #aaa;
-  font-weight: bold; }
+  font-family: "Raleway", sans-serif; }
 
-.to-top-link a:hover {
+.top:hover {
   color: #000; }
 
 /* CLEARFIX */
@@ -264,6 +274,8 @@ form {
   /* CLASSES */
   h2, h3 {
     text-align: center; }
+  h3 {
+    padding: 0; }
   .about-header {
     margin-top: 0;
     text-align: center; }

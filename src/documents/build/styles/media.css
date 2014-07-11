@@ -2,6 +2,8 @@
   /* CLASSES */
   h2, h3 {
     text-align: center; }
+  h3 {
+    padding: 0; }
   .about-header {
     margin-top: 0;
     text-align: center; }
