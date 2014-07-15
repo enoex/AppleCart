@@ -1,4 +1,4 @@
-@media screen and (min-width: 670px){
+@media screen and (min-width: 600px){
 	h2,
 	h3 {
 		text-align: center;
@@ -45,9 +45,13 @@
 }
 
 @media screen and (min-width: 960px) {
+	p {
+		font-size: 20px;
+	}
 	/*CLASSES */
 	.about-image {
 		margin-right: 5%;
+		width: 350px;
 	}
 	.float {
 		float: left;
@@ -60,5 +64,11 @@
     .home-banner .page-title {
 		font-size: 3em;
 		padding-top: 80px;
+	}
+	.main-title, 
+	.page-title,
+	.tagline,
+	.page-tagline {
+		text-align: left;
 	}
 }
