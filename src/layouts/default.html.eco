@@ -33,9 +33,9 @@
             <div class="page-tagline">Web Design by Alisen Hazzard</div>
 
             <div class="site-nav">
-                <a href="/" class="current other-tab">Home</a>
-                <a href="/portfolio.html" class="other-tab">Portfolio</a>
-                <a href="/about.html" class="other-tab">About</a>
+                <a href="/" class="<%= if @document.pageName == 'home' then "current" %> other-tab">Home</a>
+                <a href="/portfolio.html" class="<%= if @document.pageName == 'portfolio' then "current" %> other-tab">Portfolio</a>
+                <a href="/about.html" class="<%= if @document.pageName == 'about' then "current" %> other-tab">About</a>
             </div>
             <div class="clearfix"></div>
         </div>

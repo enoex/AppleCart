@@ -234,6 +234,9 @@ strong {
 .top:hover {
   color: #000; }
 
+.twitter-share-button {
+  margin-top: 25px; }
+
 /* CLEARFIX */
 .clearfix {
   clear: both; }
