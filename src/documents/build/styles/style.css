@@ -114,8 +114,8 @@ strong {
   font-size: 16px; }
 
 .home-banner {
-  background-image: url("/img/home-posterize2.jpg");
-  background-repeat: repeat-x;
+  background-image: url("/img/home-banner.jpg");
+  background-repeat: repeat-x repeat-y;
   background-position: center;
   background-size: cover;
   min-height: 8em; }
@@ -262,6 +262,58 @@ form {
 .button:hover {
   background-color: #fafafa;
   color: #207cca; }
+
+/* COLUMN ALBUM POST */
+.col-left, .col-right {
+  float: left;
+  width: 50%; }
+
+.col-img {
+  display: table;
+  margin: 20px 10px;
+  max-width: 250px; }
+
+.col-wrapper {
+  display: table;
+  margin: 20px auto;
+  max-width: 810px; }
+
+.brick {
+  color: #E18728; }
+
+.code {
+  color: #A09844;
+  display: table;
+  font-size: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  width: 90%; }
+
+.code p {
+  margin: 0; }
+
+.green {
+  color: #68986C; }
+
+.blue {
+  background-color: #23ABB6;
+  color: #fff;
+  height: 20px;
+  letter-spacing: 2px;
+  padding: 10px 0 10px 10px;
+  width: 100%; }
+
+.teal {
+  color: #51Ab95; }
+
+.slate {
+  background-color: #222;
+  padding: 10px 0 10px 10px;
+  width: 100%; }
+
+@media screen and (min-width: 990px) {
+  .col-img {
+    max-width: 385px; } }
 
 @media screen and (min-width: 700px) {
   /* CLASSES */

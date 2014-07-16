@@ -65,7 +65,7 @@ gulp.task('watch', function() {
     // When files change, update
     gulp.watch(paths.scripts, ['scripts']);
     gulp.watch(paths.scripts, ['scripts-tests']);
-    gulp.watch(paths.images, ['images']);
+    //gulp.watch(paths.images, ['images']);
     gulp.watch(paths.css, ['sass']);
 });
 
