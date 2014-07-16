@@ -183,6 +183,7 @@ strong {
 	font-size: 20px;
 	max-width: 600px;
 	margin: 0 auto;
+	width: 90%;
 }
 .post-desc {
 	display: table;
@@ -289,7 +290,7 @@ form {
 .col-img {
 	display: table;
 	margin: 20px 10px;
-	max-width: 250px;
+	max-width: 170px;
 }
 .col-wrapper {
 	display: table;
@@ -330,6 +331,11 @@ form {
 	width: 100%;
 }
 
+@media screen and (min-width: 650px) {
+	.col-img {
+		max-width: 250px;
+	}
+}
 @media screen and (min-width: 990px) {
 	.col-img {
 		max-width: 385px;
