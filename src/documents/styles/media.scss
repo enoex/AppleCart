@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px){
+@media screen and (min-width: 700px){
 	h2,
 	h3 {
 		text-align: center;
@@ -17,30 +17,37 @@
 		text-align: center;
 		margin-left: 0;
 	}
-	.display-mobile {
-		display: none;
-	}
 	.home-banner {
 		min-height: 16em;
 	}
     .home-banner .page-title {
 		font-size: 2.5em;
-		padding-top: 40px;
+		padding-top: 84px;
 		text-align: center;
 	}
 	.new-post2 {
 		display: table;
 		margin: 0 auto;
 	}
-	.site-nav {
-		display:block;
+	.page-tagline {
+		margin-bottom: 50px;
 	}
-	.site-nav a {
-		position: relative;
+	.page-title,
+	.page-tagline {
+		text-align: left;
+		margin-left: 50px;
 	}
 	.home-banner .page-tagline {
 		font-size: 1.5em;
 		text-align: center;
+	}
+	.site-nav {
+		background: none;
+		box-shadow: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: initial;
 	}
 }
 
@@ -60,15 +67,8 @@
 	}
 	.home-banner {
 		min-height: 22em;
-	}
-    .home-banner .page-title {
-		font-size: 3em;
-		padding-top: 80px;
-	}
-	.main-title, 
-	.page-title,
-	.tagline,
-	.page-tagline {
-		text-align: left;
+	} 
+	.home-banner .page-title {
+		padding-top: 140px;
 	}
 }
