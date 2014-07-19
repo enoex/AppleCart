@@ -29,4 +29,8 @@ pageName: 'home'
 <% end %>
 
 
-<div class="to-top-link"><a href="/" class="top">Back to Top</a></div>
+<div class="to-top-link"> 
+    <a href="/"> 
+        <p class="top post-content">Back to Top</p>
+    </a>
+</div>
