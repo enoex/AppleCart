@@ -1,0 +1,75 @@
+@media screen and (min-width: 700px) {
+  h2,
+  h3 {
+    text-align: center; }
+
+  h3 {
+    padding: 0; }
+
+  /* CLASSES */
+  .about-header {
+    margin-top: 0;
+    text-align: center; }
+
+  .blog-page,
+  .current-page {
+    text-align: center;
+    margin-left: 0; }
+
+  .home-banner {
+    min-height: 16em; }
+
+  .home-banner .page-title {
+    font-size: 3em;
+    padding-top: 84px;
+    text-align: center; }
+
+  .new-post2 {
+    display: table;
+    margin: 0 auto; }
+
+  .page-tagline {
+    margin-bottom: 50px; }
+
+  .page-title {
+    font-size: 2em; }
+
+  .page-title,
+  .page-tagline {
+    text-align: left;
+    margin-left: 30px; }
+
+  .home-banner .page-tagline {
+    font-size: 1.5em;
+    text-align: center; }
+
+  .site-nav {
+    background: none;
+    box-shadow: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: initial; } }
+@media screen and (min-width: 960px) {
+  p {
+    font-size: 20px; }
+
+  /*CLASSES */
+  .about-image {
+    margin-right: 5%;
+    width: 350px; }
+
+  .float {
+    float: left;
+    padding: 20px 0;
+    width: 45%; }
+
+  .home-banner {
+    min-height: 22em; }
+
+  .home-banner .page-tagline {
+    font-size: 2em; }
+
+  .home-banner .page-title {
+    font-size: 4em;
+    padding-top: 140px; } }

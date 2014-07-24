@@ -79,12 +79,13 @@ strong {
 	background-size: cover;
 	min-height: 8em;
 }
-.about-banner {
+.about-banner,
+.blog-banner,
+.content-banner,
+.portfolio-banner {
 	background-image: url("/img/about-posterize.jpg");
 }
-.blog-banner, .content-banner {
-	background-image: url("/img/blog-posterize.jpg");
-}
+
 .blog-image {
 	border: 1px solid #ccc;
 	box-shadow: 1px 1px 4px #ccc;
@@ -123,6 +124,7 @@ strong {
 .date {
 	font-size: 16px;
 } 
+
 .home-banner {
 	background-image: url("/img/home-banner.jpg");
 	background-repeat: repeat-x repeat-y;
@@ -160,9 +162,7 @@ strong {
 	padding-top: 50px;
 	text-align: center;
 }
-.portfolio-banner {
-	background-image: url("/img/portfolio-posterize.jpg");
-}
+
 .post-content {
 	line-height: 1.6em;
 	margin: 0 auto;
@@ -183,6 +183,7 @@ strong {
 	font-size: 20px;
 	max-width: 600px;
 	margin: 0 auto;
+	padding: 10px 0;
 	width: 90%;
 }
 .post-desc {
